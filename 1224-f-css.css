@@ -1,0 +1,88 @@
+html,body,div{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+	
+	#fiction{
+		width:100;
+		height:1024px;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+	
+	header{
+		width:100%;
+		height:20%;
+	background-color:pink;
+	}
+	
+	nav{
+		width:20%;
+		height:70%;
+		background:lightgray;
+	}
+	
+	section{
+		width:70%;
+		height:70%;
+	}
+	
+	aside{
+		width:10%;
+		height:70%;
+		background-color:lightgray;
+	}
+	
+	footer{
+		width:100%;
+		height:10%;
+		background-color:pink;
+	}
+	
+	h2{
+	text-align:center;
+	}
+	
+
+	/*設定在頁首區內的彈性容器及Div結構的外觀*/
+	
+	.aa01{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	
+	.bb01{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		margin:10px;
+		width:400px;
+		justify-content:center;
+		align-items:flex-end;
+	}
+	
+	div>div{
+		width:80px;
+		height:40px;
+		background-color:lightyellow;
+		border:solid 1px red;
+		border-radius:0.3em;
+		text-align:center;
+	}
+	
+	.adj-img{
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		border:blue 2px solid;
+		transition:0.5s width ease-out 0.3s,1s border ease-out 0.8s;
+	}
+		
+		.adj-img:hover{
+			width:200px;
+			border:lightblue 3px dashed;
+		}
