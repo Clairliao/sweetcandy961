@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+     	<meta charset="utf-8">
+	<title>使用彈性容器設計簡易網頁布局</title>
+	<link rel="stylesheet" href="1224-f-css.css">
+<style>
+html,body,div{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+	
+	#fiction{
+		width:100;
+		height:1024px;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+	
+	header{
+		width:100%;
+		height:20%;
+	background-color:pink;
+	}
+	
+	nav{
+		width:20%;
+		height:70%;
+		background:lightgray;
+	}
+	
+	section{
+		width:70%;
+		height:70%;
+	}
+	
+	aside{
+		width:10%;
+		height:70%;
+		background-color:lightgray;
+	}
+	
+	footer{
+		width:100%;
+		height:10%;
+		background-color:pink;
+	}
+	
+	h2{
+	text-align:center;
+	}
+	
+
+	/*設定在頁首區內的彈性容器及Div結構的外觀*/
+	
+	.aa01{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	
+	.bb01{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		margin:10px;
+		width:400px;
+		justify-content:center;
+		align-items:flex-end;
+	}
+	
+	div>div{
+		width:80px;
+		height:40px;
+		background-color:lightyellow;
+		border:solid 1px red;
+		border-radius:0.3em;
+		text-align:center;
+	}
+	
+	.adj-img{
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		border:blue 2px solid;
+		transition:0.5s width ease-out 0.3s,1s border ease-out 0.8s;
+	}
+		
+		.adj-img:hover{
+			width:200px;
+			border:lightblue 3px dashed;
+		}
+       
+      </style>
+	</head>
+	<body>
+	<div id="fiction">
+	<header class="aa01">
+	<div class="bb01">
+	<div>溫度</div>
+	<div>濕度</div>
+	<div>酸度</div>
+	<div>濃度</div>
+	</div>
+	<div class="bb01">
+	<div>陽光</div>
+	<div>含氧量</div>
+	<div>風向</div>
+	<div>負壓</div>
+	</div>
+	</header>
+	<header><h1>我是頁首</h1></header>
+	<nav>
+	<ul>
+	<li><a href="https://www.kfcclub.com.tw/meal/JA001" target="_blank">蛋塔</a></li>
+	<li>台中</li>
+	<li>高雄</li></ul>
+	</nav>
+	<section>
+	<h1>我是內文區</h1>
+	<iframe width="400" height="300" src="https://www.youtube.com/embed/kTMjW97-CvY" title="感受台中Feel Taichung ｜10分鐘刻在心底版" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3641.02012755586!2d120.68533532534795!3d24.13593127840927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5paw5pmC5Luj6LO854mp5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1735017533185!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe name="ifr001" width="400" height="300" style="border:0"></iframe>
+	</section>
+	<aside>
+	<h1>我是右側欄</h1>
+	<img class="adj-img" src="給學生的範例檔/images/orange cartoon fruit vector_5769208.png" width="100">
+	</aside>
+	<footer><h1>我是頁尾區</h1></footer>
+	</div>
+	</body>
+	</html>
